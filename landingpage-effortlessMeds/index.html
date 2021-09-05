@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LandingPage-EffortlessMeds</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <header>
+        <a href="#" class="logo">EffortlessMeds</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </header> -->
+    <div class="container">
+
+        <a href="#" class="logo"><span>H</span>ealth<span>C</span>are.</a>
+    
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#facility">facility</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#post">post</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    
+        <div class="fas fa-bars"></div>
+    
+    </div>
+
+
+
+
+    <section>
+        <h2 id="text">EffortlessMeds<br><span>Stay Safe, Stay Healthy.
+            Caring For You.</span></h2>
+            <img src="bird1.png" alt="" id="bird1">
+            <img src="bird2.png" alt="" id="bird2">
+            <img src = "medic.svg" alt="" id="forest">
+            <!-- <img src="rocks.png" alt="" id="rocks"> -->
+            <!-- <img src="water.png" alt="" id="water"> -->
+    </section>
+    <div class="sec">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula malesuada elit at sollicitudin. Morbi in ex vel orci dapibus aliquet ut eget nunc. Suspendisse vel mi quis odio volutpat sollicitudin eu non risus. Morbi placerat dapibus velit nec ornare. Donec imperdiet, metus sed porta consequat, sapien nibh iaculis massa, non dictum elit dolor sagittis nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus odio nunc, rutrum id ante non, lobortis sodales tortor. Cras tincidunt, felis sed facilisis volutpat, ex odio aliquam justo, nec placerat velit velit at sapien. Vestibulum posuere purus in tellus molestie, in sollicitudin urna scelerisque.
+
+            Donec tincidunt, velit sed pellentesque interdum, dolor magna faucibus sem, non dignissim purus enim ac arcu. Aenean imperdiet est odio, et malesuada mauris malesuada efficitur. Nam eget rhoncus augue, eget tristique lacus. Suspendisse vulputate ligula ac dictum tincidunt. Mauris dapibus vitae quam a dictum. Maecenas dictum risus turpis, sed commodo magna laoreet ac. Maecenas turpis sapien, tempus a leo non, rhoncus mattis eros. Fusce sodales imperdiet sem, a egestas urna volutpat ut. Nullam placerat, mauris vel sodales imperdiet, nisi arcu sodales dolor, quis fringilla ex libero eget erat. Donec egestas lorem eros, eu feugiat dolor egestas ac. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec rhoncus lacus in vestibulum pretium. Curabitur in ullamcorper augue, ac consectetur leo. Donec et mattis ante, at pulvinar arcu. Pellentesque non nisi vitae est tempor rutrum.</p>
+
+    </div>
+
+    <script>
+        let text=document.getElementById('text');
+        let bird1=document.getElementById('bird1');
+        let bird2=document.getElementById('bird2');
+        let rocks=document.getElementById('rocks');
+        let forest=document.getElementById('forest');
+        let water=document.getElementById('water');
+        let header=document.getElementById('header');
+        
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+
+            text.style.top=50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            rocks.style.top= value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+       })
+    </script>
+</body>
+</html>
