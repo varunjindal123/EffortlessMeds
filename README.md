@@ -16,3 +16,9 @@ Problems faced by people
 -Ambulance booking
 -Nearest hospital location
 
+Tech Stack:-
+Frontend-Html css bootstrap javascript
+DataBase-postresSQl
+Cloud- Amazon AWS
+Backend : node.js
+
